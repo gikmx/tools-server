@@ -1,0 +1,8 @@
+.git
+node_modules
+lib
+.tern-port
+package-lock.json*
+yarn.lock*
+.DS_*
+*.log

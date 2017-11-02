@@ -1,0 +1,51 @@
+{
+  "name": "@gik/tools-server",
+  "version": "0.0.1",
+  "description": "A minimal web server.",
+  "license": "MIT",
+  "homepage": "https://github.com/gikmx/tools",
+  "contributors": [
+    "Héctor Menéndez <hector@gik.mx>"
+  ],
+  "keywords": [
+    "server",
+    "http",
+    "minimal",
+    "pure"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gikmx/tools-server"
+  },
+  "bugs": {
+    "url": "https://github.com/gikmx/tools/issues"
+  },
+  "engines": {
+    "node": ">=6.11.3",
+    "npm": ">=5.4.2"
+  },
+  "main": "lib/server.js",
+  "directories": {
+    "test": "./__tests__",
+    "src": "./src",
+    "out": "./lib"
+  },
+  "scripts": {
+    "docs": "gik-npm docs",
+    "test": "gik-npm lint test && gik-npm test",
+    "build": "gik-npm lint src && gik-npm build",
+    "verify": "npm run build -s && npm run test -s",
+    "start": "gik-npm start 'npm run verify -s'",
+    "pub": "npm run verify -s && npm run docs -s && npm publish --access public --tag",
+    "precommit": "npm run verify -s && gik-npm version patch && npm run docs -s"
+  },
+  "dependencies": {
+    "@gik/tools-logger": "^0.0.6",
+    "@gik/tools-streamer": "^0.0.9",
+    "@gik/tools-thrower": "^0.1.9"
+  },
+  "devDependencies": {
+    "@gik/eslint-config-node": "^0.0.3",
+    "@gik/npm": "^0.1.8"
+  }
+}
