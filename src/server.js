@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 import PATH from 'path';
 import HTTP from 'http';
+import { parse as PARSE } from 'url';
 import Thrower from '@gik/tools-thrower';
 import Logger from '@gik/tools-logger';
 import { $ } from '@gik/tools-streamer';
@@ -21,7 +22,7 @@ const log = Logger({
  * @param {string} [config.handlers=CWD/handlers] - The location for the handlers folder.
  * @param {string} [config.port=3333] - The port to use when starting the server.
  * The `PORT` environment variable can also be used to set this.
- * @param {string} [config.port=0.0.0.0] - The host to use when starting the server.
+ * @param {string} [config.host=0.0.0.0] - The host to use when starting the server.
  * The `HOST` environment variable can also be used to set this.
  * @param {Function} [config.handler404] - The default handler for routes without handler.
  * @param {Function} [config.onNext] - When subscription mode is enabled this is called
@@ -107,6 +108,9 @@ export default function Server(config = {}) {
         // switch to an observable containing all the requests made to the server.
         .mergeMap(([server, routes]) => $.create(observer =>
             server.on('request', (request, response) => {
+                const url = PARSE(request.url, true);
+                request.url = url.pathname;
+                request.query = url.query;
                 // make sure we have all the data before triggering.
                 let body = '';
                 request.on('data', (chunk) => { body += chunk; });
