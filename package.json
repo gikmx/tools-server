@@ -1,9 +1,9 @@
 {
     "name": "@gik/tools-server",
     "version": "0.0.4",
-    "description": "A minimal web server.",
+    "description": "A minimal web server. Part of our [tools suite](https://github.com/gikmx/tools).",
     "license": "MIT",
-    "homepage": "https://github.com/gikmx/tools",
+    "homepage": "http://gik.mx",
     "contributors": [
         "Héctor Menéndez <hector@gik.mx>"
     ],

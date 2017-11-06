@@ -1,5 +1,5 @@
-# [@gik/tools-server](https://github.com/gikmx/tools) *0.0.4*
-> A minimal web server.
+# [@gik/tools-server](http://gik.mx) *0.0.4*
+> A minimal web server. Part of our [tools suite](https://github.com/gikmx/tools).
 
 ##### Contributors
 - [Héctor Menéndez](mailto:hector@gik.mx) []()
@@ -15,6 +15,8 @@
 # <a name="server"></a> server
 
 A minimal webserver using [RxJS Observables](https://github.com/reactivex/rxjs).
+> - [Standalone version](https://github.com/gikmx/tools-streamer).
+> - [Report a Bug](https://github.com/gikmx/tools-streamer/issues).
 
 ###### Parameters
 <table>

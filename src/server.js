@@ -15,6 +15,8 @@ const log = Logger({
 /**
  * @module server
  * @description A minimal webserver using [RxJS Observables](https://github.com/reactivex/rxjs).
+ * > - [Standalone version](https://github.com/gikmx/tools-streamer).
+ * > - [Report a Bug](https://github.com/gikmx/tools-streamer/issues).
  *
  * @param {Object} [config] - The configuration for the server.
  * @param {boolean} [config.subscription=true] - Should the server should be started right away.
