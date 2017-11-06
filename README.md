@@ -1,4 +1,4 @@
-# [@gik/tools-server](https://github.com/gikmx/tools) *0.0.1*
+# [@gik/tools-server](https://github.com/gikmx/tools) *0.0.4*
 > A minimal web server.
 
 ##### Contributors
@@ -61,7 +61,7 @@ A minimal webserver using [RxJS Observables](https://github.com/reactivex/rxjs).
 The <code>PORT</code> environment variable can also be used to set this. <b>Default <code>3333</code></b></td>
     </tr><tr>
         <td style="white-space: nowrap;">
-            <code>[config.port]</code>
+            <code>[config.host]</code>
         </td>
         <td style="white-space: nowrap;">
                 <a href="#string">string</a>
