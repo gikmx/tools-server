@@ -1,6 +1,6 @@
 {
     "name": "@gik/tools-server",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A minimal web server. Part of our [tools suite](https://github.com/gikmx/tools).",
     "license": "MIT",
     "homepage": "http://gik.mx",
@@ -49,7 +49,7 @@
     },
     "devDependencies": {
         "@gik/eslint-config-node": "^0.0.3",
-        "@gik/npm": "^0.1.10"
+        "@gik/npm": "^0.1.11"
     },
     "@gik/npm": {
         "babel": {

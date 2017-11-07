@@ -1,4 +1,4 @@
-# [@gik/tools-server](http://gik.mx) *0.0.4*
+# [@gik/tools-server](http://gik.mx) *0.0.5*
 > A minimal web server. Part of our [tools suite](https://github.com/gikmx/tools).
 
 ##### Contributors
